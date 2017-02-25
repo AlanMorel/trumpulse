@@ -1,8 +1,5 @@
 # Trumpulse
-**Trumpulse** uses data from multiple news sources so you can get the pulse of America under Trump.
-
-## Technical Details
-**Trumpulse** is a single-page application made using HTML, CSS, and JavaScript. The app pulls data from variables news sources and social networks like Facebook and Twitter to give you a diverse picture of the state of America under the Trump administration.
+**Trumpulse** uses data from multiple news sources so you can get the pulse of America under Trump. It is a single-page application made using HTML, CSS, and JavaScript. Using data from various news sources and social networks like Facebook and Twitter, you can get a diverse picture of the state of America under the Trump administration.
 
 ## APIs
 * [News API](https://newsapi.org/) - live news headlines api

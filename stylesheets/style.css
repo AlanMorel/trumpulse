@@ -46,7 +46,7 @@ body {
 }
 
 .main {
-    min-height: 85vh;
+    min-height: 80vh;
     transition: opacity 0.75s;
 }
 
