@@ -11,19 +11,19 @@
 
 ## News Sources
 * [Associated Press](https://www.ap.org)
-* [Business Insider]()
-* [CNBC]()
-* [CNN]()
-* [Facebook]()
-* [Google News]()
-* [Independent]()
-* [New York Magazine]()
-* [Newsweek]()
-* [Reuters]()
-* [The Huffington Post]()
-* [Time]()
-* [Twitter]()
-* [USA Today]()
+* [Business Insider](http://www.businessinsider.com/)
+* [CNBC](http://www.cnbc.com/)
+* [CNN](http://www.cnn.com/)
+* [Facebook](https://www.facebook.com/)
+* [Google News](https://news.google.com/)
+* [Independent](http://www.independent.co.uk/)
+* [New York Magazine](http://nymag.com/)
+* [Newsweek](http://www.newsweek.com/)
+* [Reuters](http://www.reuters.com/)
+* [The Huffington Post](http://www.huffingtonpost.com/)
+* [Time](http://time.com/)
+* [Twitter](https://twitter.com/)
+* [USA Today](http://www.usatoday.com/)
 
 ## Live Demo
 Check out the live demo on my [personal site](http://www.alanmorel.com/trump).
