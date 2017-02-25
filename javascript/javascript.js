@@ -29,9 +29,7 @@ function loadPage() {
 }
 
 function preload(id){
-    if (id === "all"){
-        loadEverything();
-    } else if (id === "facebook"){
+    if (id === "facebook"){
         loadFacebookPosts();
     } else if (id === "twitter"){
         loadTweets();
@@ -54,10 +52,14 @@ function displaySplash() {
 }
 
 function loadSource(id) {
-    if (id === "all" || id === "twitter" || id === "facebook"){
+    if (id === "twitter" || id === "facebook"){
         return;
     }
-    renderTemplate(Handlebars.templates.articles, data[id]);
+    if (id === "all"){
+        loadEverything();
+    } else {
+        renderTemplate(Handlebars.templates.articles, data[id]);
+  }
 }
 
 
