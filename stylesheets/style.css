@@ -241,13 +241,14 @@ body {
     background-color: #2e45bf;
 }
 
-.modal-top {
-    font-size: 5vw;
+.modal-header {
+    font-size: 6vw;
     font-family: "ssp-bold";
 }
 
-.modal-bottom {
+.modal-text {
     font-size: 3vw;
+    padding: 0 5%;
 }
 
 .footer {
@@ -361,13 +362,13 @@ span.likes {
         font-size: 24px;
     }
     .modal-content {
-        width: 75%;
+        width: 65%;
     }
-    .modal-top {
-        font-size: 30px;
+    .modal-header {
+        font-size: 48px;
     }
-    .modal-bottom {
-        font-size: 20px;
+    .modal-text {
+        font-size: 18px;
     }
     .close {
         color: #fff;
@@ -410,7 +411,7 @@ span.likes {
         font-size: 16px;
     }
     .modal-content {
-        width: 60%;
+        width: 50%;
     }
     .title {
         font-size: 4vw;
@@ -428,7 +429,7 @@ span.likes {
         column-count: 2;
     }
     .modal-content {
-        width: 50%;
+        width: 40%;
     }
     .title{
         font-size: 2vw;
