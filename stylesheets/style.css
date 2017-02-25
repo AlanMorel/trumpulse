@@ -267,6 +267,7 @@ body {
 
 .tweet {
     display: inline-block;
+    min-width: 600px;
 }
 
 .tweet-a {
@@ -365,7 +366,7 @@ span.likes {
         font-size: 20px;
     }
     .tweet-a {
-        margin: 2%;
+        margin: 2% 0;
     }
     .tweet-info {
         font-size: 16px;

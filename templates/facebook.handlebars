@@ -1,0 +1,15 @@
+<div class="facebook-container">
+    <div class="posts">
+        {{#each this}}
+            <a href="https://twitter.com/realDonaldTrump/status/{{this.id}}" class="fb-a">
+                <div class="post">
+                    <div class="facebook-content">
+                        <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/16174753_10158517450380725_87513729581056003_n.jpg?oh=e284f8149c593175a6154b64b571a183&oe=5934E77A" class="facebook-profile">
+                        <span class="facebook-text">{{this.message}}</span>
+                    </div>
+                    <div class="timestamp">{{this.timestamp}}</div>
+                </div>
+            </a>
+        {{/each}}
+    </div>
+</div>

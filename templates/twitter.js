@@ -1,6 +1,6 @@
 (function() {
   var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
-templates['tweets'] = template({"1":function(container,depth0,helpers,partials,data) {
+templates['twitter'] = template({"1":function(container,depth0,helpers,partials,data) {
     var alias1=container.lambda, alias2=container.escapeExpression;
 
   return "            <a href=\"https://twitter.com/realDonaldTrump/status/"

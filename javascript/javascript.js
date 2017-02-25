@@ -86,10 +86,11 @@ function displayTweets(tweets) {
         var date = tweets[i].created_at.replace(/^\w+ (\w+) (\d+) ([\d:]+) \+0000 (\d+)$/, "$1 $2 $4 $3 UTC");
         tweets[i].timestamp = new Date(date).toLocaleTimeString("en-us", options);
     }
-    renderTemplate(Handlebars.templates.tweets, tweets);
+    renderTemplate(Handlebars.templates.twitter, tweets);
 }
 
 function displayFacebookPosts(posts) {
+  renderTemplate(Handlebars.templates.facebook, posts.posts.data);
 }
 
 function renderTemplate(template, context){
