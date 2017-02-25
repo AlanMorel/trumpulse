@@ -5,15 +5,15 @@ templates['facebook'] = template({"1":function(container,depth0,helpers,partials
 
   return "            <a href=\"https://twitter.com/realDonaldTrump/status/"
     + alias2(alias1((depth0 != null ? depth0.id : depth0), depth0))
-    + "\" class=\"fb-a\">\r\n                <div class=\"post\">\r\n                    <div class=\"facebook-content\">\r\n                        <img src=\"https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/16174753_10158517450380725_87513729581056003_n.jpg?oh=e284f8149c593175a6154b64b571a183&oe=5934E77A\" class=\"facebook-profile\">\r\n                        <span class=\"facebook-text\">"
+    + "\" class=\"post-a\">\r\n                <div class=\"post\">\r\n                    <div class=\"post-content\">\r\n                        <img src=\"https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/16174753_10158517450380725_87513729581056003_n.jpg?oh=e284f8149c593175a6154b64b571a183&oe=5934E77A\" class=\"facebook-profile\">\r\n                        <span class=\"post-text\">"
     + alias2(alias1((depth0 != null ? depth0.message : depth0), depth0))
-    + "</span>\r\n                    </div>\r\n                    <div class=\"timestamp\">"
+    + "</span>\r\n                    </div>\r\n                    <div class=\"post-info\">"
     + alias2(alias1((depth0 != null ? depth0.timestamp : depth0), depth0))
     + "</div>\r\n                </div>\r\n            </a>\r\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "<div class=\"facebook-container\">\r\n    <div class=\"posts\">\r\n"
+  return "<div class=\"posts-container\">\r\n    <div class=\"posts\">\r\n"
     + ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},depth0,{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "    </div>\r\n</div>\r\n";
 },"useData":true});

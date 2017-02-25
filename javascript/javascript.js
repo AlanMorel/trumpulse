@@ -73,7 +73,7 @@ function loadFacebookPosts() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (xhttp.readyState == 4 && xhttp.status == 200) {
-            displayFacebookPosts(JSON.parse(xhttp.responseText));
+            displayFacebookPosts(JSON.parse(xhttp.responseText).posts.data);
         }
     };
     xhttp.open("GET", "http://alanmorel.com/trump/facebook.php", true);
@@ -90,7 +90,11 @@ function displayTweets(tweets) {
 }
 
 function displayFacebookPosts(posts) {
-  renderTemplate(Handlebars.templates.facebook, posts.posts.data);
+  var options = { weekday: "short", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" };
+  for(var i in posts) {
+      posts[i].timestamp = new Date(posts[i].created_time).toLocaleTimeString("en-us", options);
+  }
+  renderTemplate(Handlebars.templates.facebook, posts);
 }
 
 function renderTemplate(template, context){
