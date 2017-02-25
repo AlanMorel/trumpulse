@@ -1,0 +1,3 @@
+- [ ] add all sources option
+- [ ] shift facebook and twitter data to cron job as well
+- [ ] populate credits
