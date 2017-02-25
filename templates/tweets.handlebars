@@ -1,0 +1,19 @@
+<div class="tweets-container">
+    <div class="tweets">
+        {{#each this}}
+            <a href="https://twitter.com/realDonaldTrump/status/{{this.id_str}}" class="tweet-a">
+                <div class="tweet">
+                    <div class="tweet-content">
+                        <img src="https://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2.jpg" class="twitter-profile">
+                        <span class="tweet-text">{{this.full_text}}</span>
+                    </div>
+                    <div class="tweet-info">
+                        <span class="likes">{{this.favorite_count}} Likes</span>
+                        <span class="retweets">{{this.retweet_count}} Retweets</span>
+                        <span class="timestamp">{{this.timestamp}}</span>
+                    </div>
+                </div>
+            </a>
+        {{/each}}
+    </div>
+</div>

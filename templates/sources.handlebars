@@ -1,0 +1,10 @@
+<div class="sources">
+    {{#each this}}
+        <a href="#source/{{this.id}}" draggable="false">
+            <div class="source" source="{{this.id}}" style="border-color:{{this.color}};">
+                <img src="images/logos/{{this.id}}.png" />
+                <div class="source-desc" style="background-color:{{this.color}};">{{this.desc}}</div>
+            </div>
+        </a>
+    {{/each}}
+</div>

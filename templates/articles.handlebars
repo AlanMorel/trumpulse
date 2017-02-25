@@ -1,0 +1,10 @@
+<div class="articles">
+	{{#each this}}
+	<a href="{{this.url}}" draggable="false">
+		<div class="article" draggable="false">
+			<img src="{{this.urlToImage}}" draggable="false">
+			<div class="title">{{this.title}}</div>
+		</div>
+	</a>
+	{{/each}}
+</div>
