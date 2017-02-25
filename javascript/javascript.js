@@ -29,10 +29,12 @@ function loadPage() {
 }
 
 function preload(id){
-    if (id === "twitter"){
-        loadTweets();
+    if (id === "all"){
+        loadEverything();
     } else if (id === "facebook"){
         loadFacebookPosts();
+    } else if (id === "twitter"){
+        loadTweets();
     }
     for (var i in data[id]){
         var image = new Image();
@@ -52,10 +54,22 @@ function displaySplash() {
 }
 
 function loadSource(id) {
-    if (id === "twitter" || id === "facebook"){
+    if (id === "all" || id === "twitter" || id === "facebook"){
         return;
     }
     renderTemplate(Handlebars.templates.articles, data[id]);
+}
+
+
+function loadEverything() {
+  var allArticles = [];
+  for(var i in data) {
+      var source = data[i];
+      for(var j in source) {
+        allArticles.push(source[j]);
+      }
+  }
+  renderTemplate(Handlebars.templates.all, allArticles);
 }
 
 function loadTweets() {

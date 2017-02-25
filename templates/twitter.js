@@ -19,6 +19,6 @@ templates['twitter'] = template({"1":function(container,depth0,helpers,partials,
 
   return "<div class=\"tweets-container\">\r\n    <div class=\"tweets\">\r\n"
     + ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},depth0,{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "    </div>\r\n</div>";
+    + "    </div>\r\n</div>\r\n";
 },"useData":true});
 })();
