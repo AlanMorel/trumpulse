@@ -9,6 +9,22 @@
 * [Facebook API](https://developers.facebook.com/) - facebook api
 * [Twitter API](https://dev.twitter.com/) - twitter api
 
+## News Sources
+* [Associated Press](https://www.ap.org)
+* [Business Insider]()
+* [CNBC]()
+* [CNN]()
+* [Facebook]()
+* [Google News]()
+* [Independent]()
+* [New York Magazine]()
+* [Newsweek]()
+* [Reuters]()
+* [The Huffington Post]()
+* [Time]()
+* [Twitter]()
+* [USA Today]()
+
 ## Live Demo
 Check out the live demo on my [personal site](http://www.alanmorel.com/trump).
 
