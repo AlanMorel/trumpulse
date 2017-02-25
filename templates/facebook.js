@@ -3,8 +3,8 @@
 templates['facebook'] = template({"1":function(container,depth0,helpers,partials,data) {
     var alias1=container.lambda, alias2=container.escapeExpression;
 
-  return "            <a href=\"https://twitter.com/realDonaldTrump/status/"
-    + alias2(alias1((depth0 != null ? depth0.id : depth0), depth0))
+  return "            <a href=\"https://www.facebook.com/DonaldTrump/posts/"
+    + alias2(alias1((depth0 != null ? depth0.post_id : depth0), depth0))
     + "\" class=\"post-a\">\r\n                <div class=\"post\">\r\n                    <div class=\"post-content\">\r\n                        <img src=\"https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/16174753_10158517450380725_87513729581056003_n.jpg?oh=e284f8149c593175a6154b64b571a183&oe=5934E77A\" class=\"facebook-profile\">\r\n                        <span class=\"post-text\">"
     + alias2(alias1((depth0 != null ? depth0.message : depth0), depth0))
     + "</span>\r\n                    </div>\r\n                    <div class=\"post-info\">"

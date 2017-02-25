@@ -93,6 +93,7 @@ function displayFacebookPosts(posts) {
   var options = { weekday: "short", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" };
   for(var i in posts) {
       posts[i].timestamp = new Date(posts[i].created_time).toLocaleTimeString("en-us", options);
+      posts[i].post_id = posts[i].id.split("_")[1];
   }
   renderTemplate(Handlebars.templates.facebook, posts);
 }
