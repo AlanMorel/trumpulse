@@ -1,10 +1,15 @@
 var sources = {
+    "all": {
+      id: "all",
+      desc: "Get a list of all the news articles in one spot.",
+      color: "#000000"
+    },
     "twitter": {
         id: "twitter",
         desc: "Read tweets posted directly to Donald Trump's Twitter account.",
         color: "#55acee"
     },
-	"facebook": {
+	  "facebook": {
         id: "facebook",
         desc: "Read Facebook posts from Donald Trump's Facebook account.",
         color: "#3b5998"
