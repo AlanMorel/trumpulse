@@ -35,36 +35,24 @@ body {
     user-select: none;
 }
 
-.stop-y-scrolling {
-    height: 100%;
-    overflow-y: hidden;
-}
-
-.stop-x-scrolling {
-    overflow-x: hidden;
-    width: inherit;
-}
-
 .main {
     min-height: 80vh;
-    transition: opacity 0.75s;
 }
 
-.articles{
+.articles {
     column-count: 1;
     column-gap: 0;
     line-height: 0;
 }
 
 .article {
-    background: url('images/loading.gif') no-repeat center;
+    background: url('../images/loading.gif') no-repeat center;
 }
 
 .sources {
     column-count: 2;
     column-gap: 0;
     line-height: 0;
-    padding-top: 1%;
 }
 
 .source {
@@ -127,14 +115,14 @@ body {
 }
 
 .article img {
-    width:100%;
+    width: 100%;
 }
 
 .title {
     position: absolute;
     display: inline-block;
     font-size: 5vw;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     left: 0;
     line-height: 100%;
@@ -142,8 +130,8 @@ body {
 }
 
 .article:hover .title, .title:hover {
-    color: #000;
-    background-color: rgba(255,255,255,0.75);
+    color: black;
+    background-color: rgba(255, 255, 255, 0.75);
 }
 
 .navigation img {
@@ -181,7 +169,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
@@ -211,7 +199,7 @@ body {
 }
 
 .close {
-    color: #fff;
+    color: white;
     float: right;
     font-size: 18px;
     font-weight: bold;
@@ -232,12 +220,12 @@ body {
 }
 
 .about .close:hover, .about .close:focus {
-    color: #000;
+    color: black;
     background-color: #bf291d;
 }
 
 .credits .close:hover, .credits .close:focus {
-    color: #000;
+    color: black;
     background-color: #2e45bf;
 }
 
@@ -253,7 +241,7 @@ body {
 
 .footer {
     height: 10vh;
-    background-color: #111111;
+    background-color: #111;
     text-align: center;
     display: flex;
     align-items: center;
@@ -272,7 +260,7 @@ body {
 }
 
 .tweet-a, .post-a {
-    text-align:left;
+    text-align: left;
     display: inline-block;
 }
 
@@ -298,13 +286,13 @@ body {
 }
 
 .tweet-info, .post-info {
-    background-color: rgba(0,0,0,0.25);
+    background-color: rgba(0, 0, 0, 0.25);
     padding: 2%;
     font-size: 13px;
 }
 
 .post-info {
-  text-align: right;
+    text-align: right;
 }
 
 .tweet-text, .post-text {
@@ -319,7 +307,7 @@ span.likes {
     margin-right: 3%;
 }
 
-.pull-to-refresh{
+.pull-to-refresh {
     position: absolute;
     width: 100%;
     height: 100px;
@@ -339,12 +327,16 @@ span.likes {
 .all-title {
     padding: 5%;
     text-align: left;
-    background: linear-gradient(0, rgba(255, 255, 255, 0.05) 0%,rgba(0,0,0,0.65) 100%);
+    background: linear-gradient(0, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0.65) 100%);
     border-bottom: 1px solid #222;
 }
 
 .all-title:hover {
-  background-color: #111;
+    background-color: #111;
+}
+
+.all-articles {
+    background-color: black;
 }
 
 @media only screen and (min-width: 600px) {
@@ -371,7 +363,7 @@ span.likes {
         font-size: 18px;
     }
     .close {
-        color: #fff;
+        color: white;
         float: right;
         font-size: 28px;
     }
@@ -403,6 +395,7 @@ span.likes {
         padding: 2% 5%;
     }
 }
+
 @media only screen and (min-width: 800px) {
     .sources {
         column-count: 3;
@@ -431,7 +424,7 @@ span.likes {
     .modal-content {
         width: 40%;
     }
-    .title{
+    .title {
         font-size: 2vw;
     }
 }
@@ -443,7 +436,7 @@ span.likes {
     .articles {
         column-count: 3;
     }
-    .title{
+    .title {
         font-size: 1.5vw;
     }
 }
@@ -456,25 +449,25 @@ span.likes {
     overflow: auto;
 }
 
-.nav-item {
+.navigation li {
     width: 250px;
     border-top: 1px solid #111;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid black;
 }
 
-.nav-item a {
+.navigation li a {
     display: block;
     padding: 1em;
-    background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
     color: white;
     font-size: 1.2em;
     text-decoration: none;
     transition: color 0.2s, background 0.5s;
 }
 
-.nav-item a:hover {
+.navigation li a:hover {
     color: #c74438;
-    background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(75,20,20,0.65) 100%);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(75, 20, 20, 0.65) 100%);
 }
 
 .site-wrap {
@@ -503,16 +496,15 @@ label[for="trigger"] {
     background-size: contain;
 }
 
-.trigger + label, .site-wrap {
+.trigger+label, .site-wrap {
     transition: left 0.25s, background-color 0.5s;
-
 }
 
-.trigger:checked + label {
+.trigger:checked+label {
     left: 265px;
 }
 
-.trigger:checked ~ .site-wrap {
+.trigger:checked~.site-wrap {
     left: 250px;
-    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
 }

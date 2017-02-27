@@ -1,0 +1,10 @@
+<div class="sources">
+    <div ng-repeat="source in sources">
+        <a href="#{{source.id}}">
+            <div class="source" source="{{source.id}}" style="border-color:{{source.color}};">
+                <img ng-src="images/logos/{{source.id}}.png" />
+                <div class="source-desc" style="background-color:{{source.color}};">{{source.desc}}</div>
+            </div>
+        </a>
+    </div>
+</div>

@@ -1,82 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Trumpulse</title>
-        <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-        <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-    </head>
-    <body draggable="false">
-        <ul class="navigation">
+<html lang="en" ng-app="trumpulseApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trumpulse</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+
+<body draggable="false">
+    <ul class="navigation">
+        <img src="images/navheader.png" />
+        <li><a href="#main">Home</a></li>
+        <li id="about"><a>About</a></li>
+        <li id="credits"><a>Credits</a></li>
+        <li><a target="_blank" href="https://newsapi.org/">News API</a></li>
+        <img src="images/alanmorel.png" />
+        <li><a target="_blank" href="http://alanmorel.com/">Personal Website</a></li>
+        <li><a target="_blank" href="https://github.com/AlanMorel/trumpulse">GitHub</a></li>
+        <li><a target="_blank" href="https://www.linkedin.com/in/alanmorel">LinkedIn</a></li>
+        <li><a target="_blank" href="https://twitter.com/SharpAceX/">Twitter</a></li>
+    </ul>
+    <input type="checkbox" id="trigger" class="trigger" />
+    <label for="trigger"></label>
+    <div class="splash">
+        <div class="splash-content">
+            <img src="images/trump.png" />
             <img src="images/navheader.png" />
-            <li class="nav-item"><a href="#main">Home</a></li>
-            <li class="nav-item" id="about"><a>About</a></li>
-            <li class="nav-item" id="credits"><a>Credits</a></li>
-            <li class="nav-item"><a target="_blank" href="https://newsapi.org/">News API</a></li>
-            <img src="images/alanmorel.png" />
-            <li class="nav-item"><a target="_blank" href="http://alanmorel.com/">Personal Website</a></li>
-            <li class="nav-item"><a target="_blank" href="https://github.com/AlanMorel/trumpulse">GitHub</a></li>
-            <li class="nav-item"><a target="_blank" href="https://www.linkedin.com/in/alanmorel">LinkedIn</a></li>
-            <li class="nav-item"><a target="_blank" href="https://twitter.com/SharpAceX/">Twitter</a></li>
-        </ul>
-        <input type="checkbox" id="trigger" class="trigger" />
-        <label for="trigger"></label>
-        <div class="splash">
-            <div class="splash-content">
+            <div class="copyright">Copyright &copy; 2017 Alan Morel</div>
+        </div>
+    </div>
+    <div class="site-wrap">
+        <div class="modal" id="about-modal">
+            <div class="modal-content about">
                 <img src="images/trump.png" />
-                <img src="images/navheader.png" />
-                <div class="copyright">Copyright &copy; 2017 Alan Morel</div>
+                <p class="modal-header">Trumpulse</p>
+                <p class="modal-text">Written in HTML, CSS and JavaScript by Alan Morel.</p>
+                <p class="modal-text">Information last updated at <span id="last-update"></span>.</p>
+                <div class="close">OK</div>
             </div>
         </div>
-        <div class="site-wrap">
-            <div class="modal" id="about-modal">
-                <div class="modal-content about">
-                    <img src="images/trump.png" />
-                    <p class="modal-header">Trumpulse</p>
-                    <p class="modal-text">Written in HTML, CSS and JavaScript by Alan Morel.</p>
-                    <p class="modal-text">Information last updated at <span id="last-update"></span>.</p>
-                    <div class="close">OK</div>
-                </div>
-            </div>
-            <div class="modal" id="credits-modal">
-                <div class="modal-content credits">
-                    <img src="images/credits.png" />
-                    <p class="modal-header">Credits</p>
-                    <p class="modal-text">
-                        Person #1 - Reason.<br>
-                        Person #2 - Reason.<br>
-                        Person #3 - Reason.
-                    </p>
-                    <div class="close">OK</div>
-                </div>
-            </div>
-            <div class="header">
-                <a href="#main">
-                    <img src="images/topheader.png" />
-                </a>
-            </div>
-            <div class="prompt">select your source</div>
-            <div class="main"></div>
-            <div class="footer">
-                <a href="#main">
-                    <img src="images/topheader.png" />
-                </a>
+        <div class="modal" id="credits-modal">
+            <div class="modal-content credits">
+                <img src="images/credits.png" />
+                <p class="modal-header">Credits</p>
+                <p class="modal-text">
+                    Person #1 - Reason.<br> Person #2 - Reason.<br> Person #3 - Reason.
+                </p>
+                <div class="close">OK</div>
             </div>
         </div>
-        <script>
-            if (location.hash){
-                document.querySelector(".splash").style.display = "none";
-            }
-        </script>
-        <script src="http://alanmorel.com/trump/data.js"></script>
-        <script src="javascript/handlebars.runtime.js"></script>
-        <script src="templates/all.js"></script>
-        <script src="templates/sources.js"></script>
-        <script src="templates/articles.js"></script>
-        <script src="templates/facebook.js"></script>
-        <script src="templates/twitter.js"></script>
-        <script src="javascript/sources.js"></script>
-        <script src="javascript/javascript.js"></script>
-    </body>
+        <div class="header">
+            <a href="#main">
+                <img src="images/topheader.png" />
+            </a>
+        </div>
+        <div class="prompt">&nbsp;</div>
+        <div class="main" id="main" ng-view autoscroll="true"></div>
+        <div class="footer">
+            <a href="#main">
+                <img src="images/topheader.png" />
+            </a>
+        </div>
+    </div>
+    <script>
+        var splash = document.querySelector(".splash");
+        if (location.hash) {
+            splash.style.display = "none";
+        } else {
+            window.location.href = "#main";
+            setTimeout(function() {
+                splash.style.opacity = "0";
+            }, 3000);
+            setTimeout(function() {
+                splash.style.display = "none";
+            }, 3500);
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-resource.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-animate.js"></script>
+    <script src="http://alanmorel.com/trump/data.js"></script>
+    <script src="javascript/sources.js"></script>
+    <script src="javascript/javascript.js"></script>
+</body>
+
 </html>

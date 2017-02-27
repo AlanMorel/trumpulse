@@ -1,15 +1,15 @@
 <div class="posts-container">
     <div class="posts">
-        {{#each this}}
-            <a href="https://www.facebook.com/DonaldTrump/posts/{{this.post_id}}" class="post-a">
+        <div ng-repeat="post in posts">
+            <a href="https://www.facebook.com/DonaldTrump/posts/{{post.post_id}}" class="post-a">
                 <div class="post">
                     <div class="post-content">
                         <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/16174753_10158517450380725_87513729581056003_n.jpg?oh=e284f8149c593175a6154b64b571a183&oe=5934E77A" class="facebook-profile">
-                        <span class="post-text">{{this.message}}</span>
+                        <span class="post-text">{{post.message}}</span>
                     </div>
-                    <div class="post-info">{{this.timestamp}}</div>
+                    <div class="post-info">{{post.timestamp}}</div>
                 </div>
             </a>
-        {{/each}}
+        </div>
     </div>
 </div>
