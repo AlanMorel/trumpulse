@@ -1,26 +1,24 @@
 var trigger = document.querySelector(".trigger");
 var header = document.querySelector(".prompt");
-var about = document.querySelector("#about-modal");
-var credits = document.querySelector("#credits-modal");
+var about = document.getElementById("about-modal");
+var credits = document.getElementById("credits-modal");
 
 var dateOptions = { weekday: "short", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" };
 var trumpulseApp = angular.module('trumpulseApp', ['ngRoute']);
 
 trumpulseApp.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider) {
-    $locationProvider.hashPrefix('');
     var pages = ["main", "all", "facebook", "twitter", "source"];
     for (var i in pages) {
-        $routeProvider
-            .when('/' + pages[i], {
+        $routeProvider.when('/' + pages[i], {
                 templateUrl: "pages/" + pages[i] + '.html',
                 controller: pages[i]
-            });
+        });
     }
-    $routeProvider
-        .when('/:source', {
+    $routeProvider.when('/:source', {
             templateUrl: 'pages/source.html',
             controller: 'source'
-        });
+    });
+    $locationProvider.hashPrefix('');
 }]);
 
 trumpulseApp.controller('main', ['$scope', '$window', function($scope, $window) {
@@ -31,7 +29,6 @@ trumpulseApp.controller('main', ['$scope', '$window', function($scope, $window) 
 trumpulseApp.controller('source', ['$scope', '$routeParams', function($scope, $routeParams) {
     var source = sources[$routeParams.source];
     header.innerHTML = source.id.replace(/-/g, " ");
-
     $scope.articles = data[source.id];
 }]);
 
@@ -42,7 +39,6 @@ trumpulseApp.controller('all', ['$scope', '$routeParams', function($scope, $rout
 
 trumpulseApp.controller('facebook', ['$scope', '$http', function($scope, $http) {
     header.innerHTML = "facebook";
-
     $http.get('http://alanmorel.com/trump/facebook.php').then(function(response) {
         var posts = response.data.posts.data;
         for (var i in posts) {
@@ -55,7 +51,6 @@ trumpulseApp.controller('facebook', ['$scope', '$http', function($scope, $http) 
 
 trumpulseApp.controller('twitter', ['$scope', '$http', function($scope, $http) {
     header.innerHTML = "twitter";
-
     $http.get('http://alanmorel.com/trump/twitter.php').then(function(response) {
         var tweets = response.data;
         for (var i in tweets) {
