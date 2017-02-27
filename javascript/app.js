@@ -3,13 +3,7 @@ var header = document.querySelector(".prompt");
 var about = document.querySelector("#about-modal");
 var credits = document.querySelector("#credits-modal");
 
-var dateOptions = {
-    weekday: "short",
-    month: "short",
-    day: "numeric",
-    hour: "2-digit",
-    minute: "2-digit"
-};
+var dateOptions = { weekday: "short", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" };
 var trumpulseApp = angular.module('trumpulseApp', ['ngRoute']);
 
 trumpulseApp.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider) {
@@ -30,15 +24,11 @@ trumpulseApp.config(["$routeProvider", "$locationProvider", function($routeProvi
 }]);
 
 trumpulseApp.controller('main', ['$scope', '$window', function($scope, $window) {
-    console.log("main");
     header.innerHTML = "select your source";
-
     $scope.sources = $window.sources;
 }]);
 
 trumpulseApp.controller('source', ['$scope', '$routeParams', function($scope, $routeParams) {
-    console.log("source");
-
     var source = sources[$routeParams.source];
     header.innerHTML = source.id.replace(/-/g, " ");
 
@@ -46,14 +36,11 @@ trumpulseApp.controller('source', ['$scope', '$routeParams', function($scope, $r
 }]);
 
 trumpulseApp.controller('all', ['$scope', '$routeParams', function($scope, $routeParams) {
-    console.log("all");
     header.innerHTML = "all";
-
     $scope.articles = allArticles;
 }]);
 
 trumpulseApp.controller('facebook', ['$scope', '$http', function($scope, $http) {
-    console.log("facebook");
     header.innerHTML = "facebook";
 
     $http.get('http://alanmorel.com/trump/facebook.php').then(function(response) {
@@ -67,7 +54,6 @@ trumpulseApp.controller('facebook', ['$scope', '$http', function($scope, $http) 
 }]);
 
 trumpulseApp.controller('twitter', ['$scope', '$http', function($scope, $http) {
-    console.log("twitter");
     header.innerHTML = "twitter";
 
     $http.get('http://alanmorel.com/trump/twitter.php').then(function(response) {
