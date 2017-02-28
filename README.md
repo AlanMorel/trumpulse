@@ -10,7 +10,7 @@
 * [Twitter API](https://dev.twitter.com/) - twitter api
 
 ## News Sources
-* [Associated Press](https://www.ap.org)
+* [Associated Press](https://www.ap.org/)
 * [Business Insider](http://www.businessinsider.com/)
 * [CNBC](http://www.cnbc.com/)
 * [CNN](http://www.cnn.com/)
@@ -26,7 +26,13 @@
 * [USA Today](http://www.usatoday.com/)
 
 ## Live Demo
-Check out the live demo on my [personal site](http://www.alanmorel.com/trump).
+Check out the live demo on my [personal site](http://www.alanmorel.com/trump/).
+
+## Screenshots
+
+![alt tag](http://i.imgur.com/9kRUHmG.png)
+![alt tag](http://i.imgur.com/9iMb1B1.png)
+![alt tag](http://i.imgur.com/08MfL9I.png)
 
 ## License
 **Trumpulse** is licensed under the [MIT license](LICENSE).
