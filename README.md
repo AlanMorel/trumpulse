@@ -1,6 +1,9 @@
 # Trumpulse
 **Trumpulse** uses data from multiple news sources so you can get the pulse of America under Trump. It is a single-page application made using Angular, HTML, CSS, and JavaScript. Using data from various news sources and social networks like Facebook and Twitter, you can get a diverse picture of the state of America under the Trump administration.
 
+## Purpose
+**Trumpulse** was created to help educate people. It encourages users not to stick to one news source for all of their information. but to instead diversify.
+
 ## Technologies
 * [Angular](https://angularjs.org/) - version 1.6.2
 
