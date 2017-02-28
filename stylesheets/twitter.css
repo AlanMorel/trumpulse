@@ -1,0 +1,65 @@
+.twitter-profile {
+    float: left;
+    padding-right: 2%;
+    max-width: 15%;
+}
+
+.tweet {
+    display: inline-block;
+    min-width: 600px;
+}
+
+.tweet-a {
+    text-align: left;
+    display: inline-block;
+}
+
+.tweet-a:nth-child(even) {
+    background: #882222;
+}
+
+.tweet-a:nth-child(odd) {
+    background: #2f61de;
+}
+
+.tweet-content {
+    display: inline-block;
+    padding: 2%;
+}
+
+.tweet-info {
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 2%;
+    font-size: 13px;
+}
+
+.tweet-text {
+    font-size: 4vw;
+}
+
+span.timestamp {
+    float: right;
+}
+
+@media only screen and (min-width: 600px) {
+    .tweet {
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5), 0 0 10px 0 rgba(0, 0, 0, 0.5)
+    }
+    .tweets {
+        width: 600px;
+        display: inline-block;
+        text-align: left;
+    }
+    .tweets-container {
+        text-align: center;
+    }
+    .tweet-text {
+        font-size: 20px;
+    }
+    .tweet-a {
+        margin: 2% 0;
+    }
+    .tweet-info {
+        font-size: 16px;
+    }
+}

@@ -4,19 +4,21 @@ var about = document.getElementById("about-modal");
 var credits = document.getElementById("credits-modal");
 
 var dateOptions = { weekday: "short", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" };
-var trumpulseApp = angular.module('trumpulseApp', ['ngRoute']);
+var trumpulseApp = angular.module('trumpulseApp', ['ngRoute', 'angularCSS']);
 
 trumpulseApp.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider) {
     var pages = ["main", "all", "facebook", "twitter"];
     for (var i in pages) {
         $routeProvider.when('/' + pages[i], {
-                templateUrl: "pages/" + pages[i] + '.html',
-                controller: pages[i]
+                templateUrl: "pages/" + pages[i] + ".html",
+                controller: pages[i],
+                css: "../stylesheets/" + pages[i] + ".css"
         });
     }
     $routeProvider.when('/:source', {
             templateUrl: 'pages/source.html',
-            controller: 'source'
+            controller: 'source',
+            css: "../stylesheets/source.css"
     });
     $locationProvider.hashPrefix('');
 }]);

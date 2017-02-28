@@ -1,0 +1,60 @@
+
+.articles {
+    column-count: 1;
+    column-gap: 0;
+    line-height: 0;
+}
+
+.article {
+    background: url('../images/loading.gif') no-repeat center;
+}
+
+.article {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+
+.article img {
+    width: 100%;
+}
+
+.title {
+    position: absolute;
+    display: inline-block;
+    font-size: 5vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    left: 0;
+    line-height: 100%;
+    bottom: 0;
+}
+
+.article:hover .title, .title:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+@media only screen and (min-width: 800px) {
+    .title {
+        font-size: 4vw;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .articles {
+        column-count: 2;
+    }
+    .title {
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .articles {
+        column-count: 3;
+    }
+    .title {
+        font-size: 1.5vw;
+    }
+}
