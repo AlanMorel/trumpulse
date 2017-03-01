@@ -12,13 +12,13 @@ trumpulseApp.config(["$routeProvider", "$locationProvider", function($routeProvi
         $routeProvider.when('/' + pages[i], {
             templateUrl: "pages/" + pages[i] + ".html",
             controller: pages[i],
-            css: "../stylesheets/" + pages[i] + ".css"
+            css: "stylesheets/" + pages[i] + ".css"
         });
     }
     $routeProvider.when('/:source', {
         templateUrl: 'pages/source.html',
         controller: 'source',
-        css: "../stylesheets/source.css"
+        css: "stylesheets/source.css"
     });
     $locationProvider.hashPrefix('');
 }]);
