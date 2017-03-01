@@ -10,7 +10,7 @@
                     <div class="tweet-info">
                         <span class="likes">{{tweet.favorite_count}} Likes</span>
                         <span class="retweets">{{tweet.retweet_count}} Retweets</span>
-                        <span class="timestamp">{{tweet.timestamp}}</span>
+                        <span class="timestamp">{{tweet.created_at * 1000 | date:'EEEE, MMMM d'}}</span>
                     </div>
                 </div>
             </a>

@@ -10,15 +10,15 @@ trumpulseApp.config(["$routeProvider", "$locationProvider", function($routeProvi
     var pages = ["main", "all", "facebook", "twitter"];
     for (var i in pages) {
         $routeProvider.when('/' + pages[i], {
-                templateUrl: "pages/" + pages[i] + ".html",
-                controller: pages[i],
-                css: "../stylesheets/" + pages[i] + ".css"
+            templateUrl: "pages/" + pages[i] + ".html",
+            controller: pages[i],
+            css: "../stylesheets/" + pages[i] + ".css"
         });
     }
     $routeProvider.when('/:source', {
-            templateUrl: 'pages/source.html',
-            controller: 'source',
-            css: "../stylesheets/source.css"
+        templateUrl: 'pages/source.html',
+        controller: 'source',
+        css: "../stylesheets/source.css"
     });
     $locationProvider.hashPrefix('');
 }]);
@@ -41,21 +41,12 @@ trumpulseApp.controller('all', ['$scope', '$routeParams', function($scope, $rout
 
 trumpulseApp.controller('facebook', ['$scope', '$http', function($scope, $http) {
     header.innerHTML = "facebook";
-    var posts = data.facebook;
-    for (var i in posts) {
-        posts[i].timestamp = new Date(posts[i].created_time).toLocaleTimeString("en-us", dateOptions);
-    }
-    $scope.posts = posts;
+    $scope.posts = data.facebook;
 }]);
 
 trumpulseApp.controller('twitter', ['$scope', '$http', function($scope, $http) {
     header.innerHTML = "twitter";
-    var tweets = data.twitter;
-    for (var i in tweets) {
-        var date = tweets[i].created_at.replace(/^\w+ (\w+) (\d+) ([\d:]+) \+0000 (\d+)$/, "$1 $2 $4 $3 UTC");
-        tweets[i].timestamp = new Date(date).toLocaleTimeString("en-us", dateOptions);
-    }
-    $scope.tweets = tweets;
+    $scope.tweets = data.twitter;
 }]);
 
 function close() {
