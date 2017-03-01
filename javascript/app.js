@@ -3,7 +3,6 @@ var header = document.querySelector(".prompt");
 var about = document.getElementById("about-modal");
 var credits = document.getElementById("credits-modal");
 
-var dateOptions = { weekday: "short", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" };
 var trumpulseApp = angular.module('trumpulseApp', ['ngRoute', 'angularCSS']);
 
 trumpulseApp.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider) {
