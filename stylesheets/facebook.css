@@ -13,10 +13,6 @@
     display: inline-block;
 }
 
-.posts .ng-scope {
-    margin: 2% 0;
-}
-
 .posts .ng-scope:nth-child(even) {
     background: #882222;
 }
@@ -69,5 +65,8 @@ span.likes {
     }
     .post-info {
         font-size: 16px;
+    }
+    .posts .ng-scope {
+        margin: 2% 0;
     }
 }
