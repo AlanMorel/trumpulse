@@ -78,7 +78,7 @@ for (var i = 0; i < closeButtons.length; i++) {
 }
 
 document.getElementById("last-update").innerHTML = function() {
-    var time = new Date(data.timestamp * 1000);
+    var time = new Date(data.news.timestamp * 1000);
     var hours = time.getHours() % 12 || 12;
     var minutes = time.getMinutes();
     var period = time.getHours() >= 12 ? "pm" : "am";
