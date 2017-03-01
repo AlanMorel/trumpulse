@@ -13,11 +13,15 @@
     display: inline-block;
 }
 
-.tweet-a:nth-child(even) {
+.tweets .ng-scope {
+    margin: 2% 0;
+}
+
+.tweets .ng-scope:nth-child(even) {
     background: #882222;
 }
 
-.tweet-a:nth-child(odd) {
+.tweets .ng-scope:nth-child(odd) {
     background: #2f61de;
 }
 
@@ -54,9 +58,6 @@ span.timestamp {
     }
     .tweet-text {
         font-size: 20px;
-    }
-    .tweet-a {
-        margin: 2% 0;
     }
     .tweet-info {
         font-size: 16px;
