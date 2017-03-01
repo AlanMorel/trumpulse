@@ -3,4 +3,4 @@ Frontend
 - add angular transition between views
 
 Backend
-- shift facebook and twitter data to cron job on server
+- convert social media times to unix and feed client that

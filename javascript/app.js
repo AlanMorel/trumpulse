@@ -31,7 +31,7 @@ trumpulseApp.controller('main', ['$scope', '$window', function($scope, $window) 
 trumpulseApp.controller('source', ['$scope', '$routeParams', function($scope, $routeParams) {
     var source = sources[$routeParams.source];
     header.innerHTML = source.id.replace(/-/g, " ");
-    $scope.articles = data[source.id];
+    $scope.articles = data.news[source.id];
 }]);
 
 trumpulseApp.controller('all', ['$scope', '$routeParams', function($scope, $routeParams) {
@@ -41,26 +41,21 @@ trumpulseApp.controller('all', ['$scope', '$routeParams', function($scope, $rout
 
 trumpulseApp.controller('facebook', ['$scope', '$http', function($scope, $http) {
     header.innerHTML = "facebook";
-    $http.get('http://alanmorel.com/trump/facebook.php').then(function(response) {
-        var posts = response.data.posts.data;
-        for (var i in posts) {
-            posts[i].timestamp = new Date(posts[i].created_time).toLocaleTimeString("en-us", dateOptions);
-            posts[i].post_id = posts[i].id.split("_")[1];
-        }
-        $scope.posts = posts;
-    });
+    var posts = data.facebook;
+    for (var i in posts) {
+        posts[i].timestamp = new Date(posts[i].created_time).toLocaleTimeString("en-us", dateOptions);
+    }
+    $scope.posts = posts;
 }]);
 
 trumpulseApp.controller('twitter', ['$scope', '$http', function($scope, $http) {
     header.innerHTML = "twitter";
-    $http.get('http://alanmorel.com/trump/twitter.php').then(function(response) {
-        var tweets = response.data;
-        for (var i in tweets) {
-            var date = tweets[i].created_at.replace(/^\w+ (\w+) (\d+) ([\d:]+) \+0000 (\d+)$/, "$1 $2 $4 $3 UTC");
-            tweets[i].timestamp = new Date(date).toLocaleTimeString("en-us", dateOptions);
-        }
-        $scope.tweets = tweets;
-    });
+    var tweets = data.twitter;
+    for (var i in tweets) {
+        var date = tweets[i].created_at.replace(/^\w+ (\w+) (\d+) ([\d:]+) \+0000 (\d+)$/, "$1 $2 $4 $3 UTC");
+        tweets[i].timestamp = new Date(date).toLocaleTimeString("en-us", dateOptions);
+    }
+    $scope.tweets = tweets;
 }]);
 
 function close() {
@@ -102,9 +97,9 @@ document.getElementById("last-update").innerHTML = function() {
 
 var allArticles = function() {
     var articles = [];
-    for (var i in data) {
-        for (var j in data[i]) {
-            articles.push(data[i][j]);
+    for (var i in data.news) {
+        for (var j in data.news[i]) {
+            articles.push(data.news[i][j]);
         }
     }
     return articles;
