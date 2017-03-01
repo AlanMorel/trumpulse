@@ -78,9 +78,10 @@ for (var i = 0; i < closeButtons.length; i++) {
 }
 
 document.getElementById("last-update").innerHTML = function() {
-    var time = new Date(data.news.timestamp * 1000);
+    var time = new Date(data.last_update * 1000);
     var hours = time.getHours() % 12 || 12;
     var minutes = time.getMinutes();
+    if (minutes < 10) { minutes = "0" + minutes; }
     var period = time.getHours() >= 12 ? "pm" : "am";
     return hours + ":" + minutes + " " + period;
 }();
