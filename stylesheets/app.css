@@ -235,6 +235,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: auto;
+    height: 100%;
 }
 
 .navigation li {
@@ -285,7 +286,8 @@ label[for="trigger"] {
 }
 
 .trigger+label, .site-wrap {
-    transition: left 0.25s, background-color 0.5s;
+    transition: left 0.5s, background-color 0.5s;
+    transform: translateZ(0);
 }
 
 .trigger:checked+label {

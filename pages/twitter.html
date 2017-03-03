@@ -1,10 +1,10 @@
 <div class="tweets-container">
     <div class="tweets">
-        <div ng-repeat="tweet in tweets">
+        <div ng-repeat="tweet in tweets" class="tweet-container">
             <a href="https://twitter.com/realDonaldTrump/status/{{this.id_str}}" class="tweet-a">
                 <div class="tweet">
                     <div class="tweet-content">
-                        <img src="https://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2.jpg" class="twitter-profile">
+                        <img src="https://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_400x400.jpg" class="twitter-profile">
                         <span class="tweet-text">{{tweet.full_text}}</span>
                     </div>
                     <div class="tweet-info">
