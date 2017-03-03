@@ -3,7 +3,7 @@ var header = document.querySelector(".prompt");
 var about = document.getElementById("about-modal");
 var credits = document.getElementById("credits-modal");
 
-var trumpulseApp = angular.module('trumpulseApp', ['ngRoute', 'angularCSS']);
+var trumpulseApp = angular.module('trumpulseApp', ['ngRoute', 'ngAnimate', 'angularCSS']);
 
 trumpulseApp.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider) {
     var pages = ["main", "all", "facebook", "twitter"];

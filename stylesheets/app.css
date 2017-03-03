@@ -1,3 +1,13 @@
+.ng-enter {
+    transition: 1s;
+    opacity: 0;
+    transform: translateZ(0);
+}
+
+.ng-enter-active {
+    opacity: 1;
+}
+
 @font-face {
     font-family: "ssp-normal";
     src: url("../fonts/ssp-normal.otf") format("opentype");
