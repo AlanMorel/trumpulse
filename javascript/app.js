@@ -59,6 +59,7 @@ document.querySelector(".site-wrap").onclick = function(event) {
     }
 };
 
+window.onhashchange = close;
 document.querySelector(".navigation").onclick = close;
 
 document.getElementById("about").onclick = function() {
