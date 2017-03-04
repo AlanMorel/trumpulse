@@ -34,7 +34,7 @@ trumpulseApp.controller('source', ['$scope', '$routeParams', function($scope, $r
 }]);
 
 trumpulseApp.controller('all', ['$scope', '$routeParams', function($scope, $routeParams) {
-    header.innerHTML = "all";
+    header.innerHTML = "all articles";
     $scope.articles = allArticles;
 }]);
 
