@@ -11,6 +11,7 @@
 .post-a {
     text-align: left;
     display: inline-block;
+    width: 100%;
 }
 
 .posts .post-container:nth-child(even) {

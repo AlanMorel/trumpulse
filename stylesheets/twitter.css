@@ -11,6 +11,7 @@
 .tweet-a {
     text-align: left;
     display: inline-block;
+    width: 100%;
 }
 
 .tweets .tweet-container:nth-child(even) {
