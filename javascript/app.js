@@ -59,7 +59,11 @@ document.querySelector(".site-wrap").onclick = function(event) {
     }
 };
 
-window.onhashchange = close;
+window.onhashchange = function(){
+  close();
+  window.scrollTo(0, 0);
+};
+
 document.querySelector(".navigation").onclick = close;
 
 document.getElementById("about").onclick = function() {
