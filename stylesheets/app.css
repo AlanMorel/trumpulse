@@ -291,7 +291,7 @@ label[for="trigger"] {
     height: 30px;
     width: 30px;
     cursor: pointer;
-    background-image: url("../images/hamburger.svg");
+    background-image: url("../images/open.svg");
     background-size: contain;
 }
 
@@ -302,6 +302,7 @@ label[for="trigger"] {
 
 .trigger:checked+label {
     left: 265px;
+    background-image: url("../images/close.svg");
 }
 
 .trigger:checked~.site-wrap {
