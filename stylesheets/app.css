@@ -112,8 +112,8 @@ body {
 }
 
 .credits {
-    background-color: #414ee3;
-    border: 2px solid #2d38ad;
+    background-color: #299231;
+    border: 2px solid #19632c;
 }
 
 .about {
@@ -154,7 +154,7 @@ body {
 }
 
 .credits .close {
-    background-color: #3645d0;
+    background-color: #1e7725;
 }
 
 .about .close:hover, .about .close:focus {
@@ -164,12 +164,13 @@ body {
 
 .credits .close:hover, .credits .close:focus {
     color: black;
-    background-color: #2e45bf;
-}
+    background-color: #1b6320;
+  }
 
 .modal-header {
     font-size: 6vw;
     font-family: "ssp-bold";
+    margin: 1rem;
 }
 
 .modal-text {
