@@ -83,12 +83,14 @@ for (var i = 0; i < closeButtons.length; i++) {
 }
 
 document.getElementById("last-update").innerHTML = function() {
-    var time = new Date(data.last_update * 1000);
-    var hours = time.getHours() % 12 || 12;
-    var minutes = time.getMinutes();
+    var date = new Date(data.last_update * 1000);
+    var month = date.toLocaleString("en-us", { month: "long" });
+    var day = date.getDate();
+    var hours = date.getHours() % 12 || 12;
+    var minutes = date.getMinutes();
     if (minutes < 10) { minutes = "0" + minutes; }
-    var period = time.getHours() >= 12 ? "pm" : "am";
-    return hours + ":" + minutes + " " + period;
+    var period = date.getHours() >= 12 ? "pm" : "am";
+    return month + " " + day + " at " + hours + ":" + minutes + " " + period;
 }();
 
 var allArticles = function() {
