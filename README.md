@@ -31,6 +31,9 @@
 ## Live Demo
 Check out the live demo on my [personal site](http://www.alanmorel.com/trump/).
 
+## Android App
+Check out the android app on [Google Play](https://play.google.com/store/apps/details?id=alanmorel.trumpulse).
+
 ## Screenshots
 
 ![alt tag](http://i.imgur.com/9kRUHmG.png)
