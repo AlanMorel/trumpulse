@@ -4,6 +4,10 @@
     line-height: 0;
 }
 
+.source-container {
+  display: inline-block;
+}
+
 .source {
     background: white;
     display: inline-block;
@@ -36,7 +40,6 @@
 
 @media only screen and (min-width: 600px) {
     .source {
-        display: inline-block;
         vertical-align: top;
         border-radius: 10px;
     }

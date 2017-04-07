@@ -61,6 +61,7 @@ body {
 .header img, .footer img {
     max-width: 60%;
     max-height: 50px;
+    margin: auto;
 }
 
 .prompt {
