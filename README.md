@@ -13,44 +13,44 @@
 * [Twitter API](https://dev.twitter.com/) - twitter api
 
 ## News Sources
-* [ABC News](http://abcnews.com/)
+* [ABC News](https://abcnews.go.com/)
 * [Associated Press](https://www.ap.org/)
-* [BBC News](http://www.bbc.com/news)
+* [BBC News](https://www.bbc.com/news)
 * [Bloomberg](https://www.bloomberg.com/)
 * [Breitbart News](http://www.breitbart.com/)
 * [Business Insider](http://www.businessinsider.com/)
 * [CBS News](https://www.cbsnews.com/)
-* [CNBC](http://www.cnbc.com/)
-* [CNN](http://www.cnn.com/)
+* [CNBC](https://www.cnbc.com/)
+* [CNN](https://www.cnn.com/)
 * [Facebook](https://www.facebook.com/)
-* [Fox News](http://www.foxnews.com/)
+* [Fox News](https://www.foxnews.com/)
 * [Google News](https://news.google.com/)
-* [Independent](http://www.independent.co.uk/)
+* [Independent](https://www.independent.co.uk/)
 * [NBC News](https://www.nbcnews.com/)
-* [New York Magazine](http://nymag.com/)
+* [New York Magazine](https://nymag.com/)
 * [Newsweek](http://www.newsweek.com/)
 * [Politico](https://www.politico.com/)
-* [Reuters](http://www.reuters.com/)
+* [Reuters](https://www.reuters.com/)
 * [The Hill](http://thehill.com/)
-* [The Huffington Post](http://www.huffingtonpost.com/)
+* [The Huffington Post](https://www.huffingtonpost.com/)
 * [The New York Times](https://www.nytimes.com/)
 * [The Wall Street Journal](https://www.wsj.com/)
 * [The Washington Post](https://www.washingtonpost.com/)
 * [Time](http://time.com/)
 * [Twitter](https://twitter.com/)
-* [USA Today](http://www.usatoday.com/)
+* [USA Today](https://www.usatoday.com/)
 
 ## Live Demo
-Check out the live demo on my [personal site](http://www.alanmorel.com/trumpulse/).
+Check out the live demo on my [personal site](https://www.alanmorel.com/trumpulse/).
 
 ## Android App
 Check out the Android app on [Google Play](https://play.google.com/store/apps/details?id=alanmorel.trumpulse).
 
 ## Screenshots
 
-![alt tag](http://i.imgur.com/9kRUHmG.png)
-![alt tag](http://i.imgur.com/9iMb1B1.png)
-![alt tag](http://i.imgur.com/08MfL9I.png)
+![alt tag](https://i.imgur.com/9kRUHmG.png)
+![alt tag](https://i.imgur.com/9iMb1B1.png)
+![alt tag](https://i.imgur.com/08MfL9I.png)
 
 ## License
 **Trumpulse** is licensed under the [MIT license](LICENSE).
