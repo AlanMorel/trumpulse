@@ -41,7 +41,7 @@
 * [USA Today](https://www.usatoday.com/)
 
 ## Live Demo
-Check out the live demo on my [personal site](https://www.alanmorel.com/trumpulse/).
+Check out the live demo on my [personal site](https://alanmorel.com/projects/trumpulse).
 
 ## Android App
 Check out the Android app on [Google Play](https://play.google.com/store/apps/details?id=alanmorel.trumpulse).
